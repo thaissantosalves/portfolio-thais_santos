@@ -1,13 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import thaissantosImage from './assets/img/thaissantos.png';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
+import About from './pages/About/about';
+import Projects from './pages/Projects/Projects';
+import Skills from './pages/Skills/skills';
+import Contact from './pages/Contact/contact';
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
