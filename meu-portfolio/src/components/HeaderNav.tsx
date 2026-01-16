@@ -24,15 +24,15 @@ function Header() {
     <header className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
       <nav className="flex items-center justify-center">
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-8 bg-black/40 backdrop-blur-md rounded-full px-6 py-3 border border-pink-500/20 shadow-lg shadow-pink-500/10">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={`text-sm font-medium transition-all duration-300 ${
                 isActive(item.path)
-                  ? 'text-pink-500 border-b-2 border-pink-500'
-                  : 'text-gray-600 hover:text-pink-500 hover:border-b-2 hover:border-pink-300'
+                  ? 'text-pink-400 border-b-2 border-pink-400'
+                  : 'text-gray-300 hover:text-pink-400 hover:border-b-2 hover:border-pink-400/50'
               }`}
             >
               {item.name}
@@ -43,7 +43,7 @@ function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden p-2 text-gray-600 hover:text-pink-500 transition-colors duration-300"
+          className="md:hidden p-2 text-gray-300 hover:text-pink-400 transition-colors duration-300 bg-black/40 backdrop-blur-md rounded-lg border border-pink-500/20"
         >
           <svg
             className={`w-6 h-6 transition-transform duration-300 ${isMenuOpen ? 'rotate-90' : ''}`}
@@ -62,7 +62,7 @@ function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-12 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-md rounded-lg shadow-lg border border-pink-200/50 py-4 px-6">
+        <div className="md:hidden absolute top-12 left-1/2 transform -translate-x-1/2 bg-black/90 backdrop-blur-md rounded-lg shadow-lg border border-pink-500/30 py-4 px-6">
           <div className="flex flex-col space-y-3">
             {navItems.map((item) => (
               <Link
@@ -71,8 +71,8 @@ function Header() {
                 onClick={() => setIsMenuOpen(false)}
                 className={`text-sm font-medium transition-all duration-300 ${
                   isActive(item.path)
-                    ? 'text-pink-500'
-                    : 'text-gray-600 hover:text-pink-500'
+                    ? 'text-pink-400'
+                    : 'text-gray-300 hover:text-pink-400'
                 }`}
               >
                 {item.name}
