@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 function TimeLine() {
-  const [timeline, setTimeline] = useState([
+  const [timeline] = useState([
     {
       year: 2020,
       description: 'Descrição do ano 2020',

@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import thaissantosImage from './assets/img/thaissantos.png';
 import Home from './pages/Home/home';
 import About from './pages/About/about';
 import Projects from './pages/Projects/projects';
