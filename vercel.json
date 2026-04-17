@@ -1,0 +1,11 @@
+{
+  "installCommand": "npm install --prefix meu-portfolio",
+  "buildCommand": "npm run build --prefix meu-portfolio",
+  "outputDirectory": "meu-portfolio/build",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
