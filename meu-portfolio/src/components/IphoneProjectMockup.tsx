@@ -36,17 +36,11 @@ export function IphoneProjectMockup({ imageSrc, alt }: IphoneProjectMockupProps)
   return (
     <div
       ref={wrapRef}
-      className="relative mx-auto flex max-w-[min(100%,320px)] justify-center pb-10 [perspective:1200px]"
+      className="relative mx-auto flex max-w-[min(100%,320px)] justify-center pb-4 [perspective:1200px]"
       onPointerMove={onMove}
       onPointerLeave={onLeave}
       onPointerCancel={onLeave}
     >
-      {!reducedMotion && (
-        <p className="pointer-events-none absolute -bottom-8 left-1/2 w-max -translate-x-1/2 font-mono text-[10px] text-zinc-500 sm:text-xs">
-          Passe o cursor para inclinar em 3D
-        </p>
-      )}
-
       <motion.div
         className="relative w-[72%] max-w-[280px] [transform-style:preserve-3d] sm:w-[78%]"
         style={{ rotateX, rotateY }}

@@ -15,7 +15,7 @@ export default function PortfolioPage() {
       <SceneBackground />
       <div className="relative z-10">
         <Header activeSection={activeSection} />
-        <main>
+        <main className="text-zinc-100">
           <HeroSection />
           <AboutSection />
           <ProjectsSection />

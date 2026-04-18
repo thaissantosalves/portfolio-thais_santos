@@ -40,8 +40,8 @@ export function HeroSection() {
           >
             <h2 className="text-xl font-semibold text-pink-300 sm:text-2xl">Desenvolvedora Full Stack</h2>
             <div className="mx-auto h-px w-24 bg-gradient-to-r from-transparent via-pink-500/70 to-transparent lg:mx-0" />
-            <p className="mx-auto max-w-xl text-lg font-light leading-relaxed text-zinc-300 lg:mx-0">
-              Do banco de dados e da modelagem de dados às APIs em Node e às rotas server-side no Next.js —
+            <p className="mx-auto max-w-xl text-lg font-normal leading-relaxed text-zinc-200 lg:mx-0">
+              Do banco de dados e da modelagem de dados às APIs em Node e às rotas server-side no Next.js,
               passando por interfaces responsivas e bem estruturadas.
             </p>
           </motion.div>
@@ -60,14 +60,14 @@ export function HeroSection() {
             </a>
             <a
               href="#contato"
-              className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-pink-400/40 hover:bg-white/10"
+              className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/10 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-pink-400/50 hover:bg-white/15"
             >
               Falar comigo
             </a>
           </motion.div>
 
           <motion.div
-            className="flex items-center justify-center gap-2 text-sm text-zinc-400 lg:justify-start"
+            className="flex items-center justify-center gap-2 text-sm text-zinc-300 lg:justify-start"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.45 }}
@@ -86,18 +86,18 @@ export function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <div className="absolute inset-0 rounded-[2rem] border border-pink-500/20 bg-gradient-to-br from-white/[0.07] to-transparent p-8 backdrop-blur-md">
-            <div className="flex h-full flex-col justify-between font-mono text-xs text-zinc-500">
-              <div className="space-y-3 text-pink-400/90">
-                <p className="text-white/80">{'// stack em destaque'}</p>
+          <div className="absolute inset-0 rounded-[2rem] border border-white/25 bg-gradient-to-br from-white/[0.12] to-white/[0.04] p-8 shadow-lg shadow-black/20 backdrop-blur-lg">
+            <div className="flex h-full flex-col justify-between font-mono text-xs text-zinc-300">
+              <div className="space-y-3 text-pink-300">
+                <p className="text-white">{'// stack em destaque'}</p>
                 <ul className="space-y-2 text-[11px] leading-relaxed sm:text-xs">
-                  <li className="text-zinc-300">React · Next.js · Angular · Vue.js</li>
-                  <li className="text-zinc-300">React Native · Taro (React) · TypeScript</li>
-                  <li className="text-zinc-300">Node · SQL/ORM · REST · Tailwind</li>
+                  <li className="text-zinc-100">React · Next.js · Angular · Vue.js</li>
+                  <li className="text-zinc-100">React Native · TypeScript</li>
+                  <li className="text-zinc-100">Node · Nest.js · SQL/ORM · REST · Tailwind</li>
                 </ul>
               </div>
-              <div className="rounded-xl border border-white/10 bg-black/40 p-4 text-[11px] text-pink-300/90">
-                <span className="text-zinc-500">status</span> build_ok — v2026.04
+              <div className="rounded-xl bg-white/[0.08] p-4 text-[11px] text-pink-200 backdrop-blur-sm">
+                <span className="text-zinc-400">status</span> build_ok, v2026.04
               </div>
             </div>
           </div>

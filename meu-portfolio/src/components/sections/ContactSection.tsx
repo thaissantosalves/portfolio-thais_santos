@@ -8,7 +8,7 @@ export function ContactSection() {
   return (
     <section
       id="contato"
-      className="relative scroll-mt-28 border-t border-white/[0.06] px-4 py-28 sm:px-6 lg:px-8"
+      className="relative scroll-mt-28 border-t border-white/[0.10] px-4 py-28 sm:px-6 lg:px-8"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,45,149,0.1),transparent_50%)]" />
       <div className="relative z-10 mx-auto max-w-3xl text-center">
@@ -19,10 +19,10 @@ export function ContactSection() {
             <span className="bg-gradient-to-r from-pink-300 to-pink-500 bg-clip-text text-transparent">
               construir algo
             </span>{' '}
-            juntas?
+            juntos?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            Chame por e-mail ou conecte no LinkedIn e no GitHub — fico feliz em conversar sobre projetos e oportunidades.
+          <p className="mx-auto mt-4 max-w-xl text-zinc-300">
+            Chame por e-mail ou conecte no LinkedIn e no GitHub, fico feliz em conversar sobre projetos e oportunidades.
           </p>
         </Reveal>
 
@@ -38,7 +38,7 @@ export function ContactSection() {
               href={linkedin}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-white/10 bg-white/[0.04] px-6 py-3 text-sm text-zinc-300 transition hover:border-pink-500/35 hover:text-white"
+              className="rounded-xl bg-white/[0.08] px-6 py-3 text-sm font-medium text-white backdrop-blur-lg transition hover:bg-white/[0.14]"
             >
               LinkedIn
             </a>
@@ -46,15 +46,15 @@ export function ContactSection() {
               href={github}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl border border-white/10 bg-white/[0.04] px-6 py-3 text-sm text-zinc-300 transition hover:border-pink-500/35 hover:text-white"
+              className="rounded-xl bg-white/[0.08] px-6 py-3 text-sm font-medium text-white backdrop-blur-lg transition hover:bg-white/[0.14]"
             >
               GitHub
             </a>
           </div>
         </Reveal>
 
-        <p className="mt-16 font-mono text-[11px] text-zinc-600">
-          © {new Date().getFullYear()} Thais Santos — React, Next.js, Node, Motion e Three.js
+        <p className="mt-16 font-mono text-[11px] text-zinc-500">
+          © {new Date().getFullYear()} Thais Santos, React, Next.js, Node, Motion e Three.js
         </p>
       </div>
     </section>

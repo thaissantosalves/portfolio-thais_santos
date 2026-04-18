@@ -7,7 +7,7 @@ const skills = [
   'Angular',
   'Vue.js',
   'React Native',
-  'Taro + React',
+  'Nest.js',
   'TypeScript',
   'Tailwind CSS',
   'Node.js',
@@ -25,7 +25,7 @@ export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="relative scroll-mt-28 border-t border-white/[0.06] px-4 py-24 sm:px-6 lg:px-8"
+      className="relative scroll-mt-28 border-t border-white/[0.10] px-4 py-24 sm:px-6 lg:px-8"
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_40%_80%,rgba(255,20,147,0.06),transparent_45%)]" />
       <div className="relative z-10 mx-auto max-w-4xl">
@@ -37,14 +37,15 @@ export function SkillsSection() {
               uso no dia a dia
             </span>
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            Do ecossistema <strong className="font-medium text-zinc-300">React</strong> e{' '}
-            <strong className="font-medium text-zinc-300">Next</strong> a{' '}
-            <strong className="font-medium text-zinc-300">Angular</strong> e{' '}
-            <strong className="font-medium text-zinc-300">Vue</strong>; no mobile,{' '}
-            <strong className="font-medium text-zinc-300">React Native</strong> e{' '}
-            <strong className="font-medium text-zinc-300">Taro</strong> com base em React — além de back, banco e
-            APIs com a mesma exigência de qualidade.
+          <p className="mx-auto mt-4 max-w-xl text-zinc-300">
+            Do ecossistema <strong className="font-semibold text-zinc-100">React</strong> e{' '}
+            <strong className="font-semibold text-zinc-100">Next</strong> a{' '}
+            <strong className="font-semibold text-zinc-100">Angular</strong> e{' '}
+            <strong className="font-semibold text-zinc-100">Vue</strong>; no mobile,{' '}
+            <strong className="font-semibold text-zinc-100">React Native</strong>, além de back com{' '}
+            <strong className="font-semibold text-zinc-100">Node</strong> e{' '}
+            <strong className="font-semibold text-zinc-100">Nest.js</strong>, banco e APIs com a mesma exigência de
+            qualidade.
           </p>
         </Reveal>
 
@@ -66,7 +67,7 @@ export function SkillsSection() {
                 show: { opacity: 1, scale: 1, transition: { duration: 0.35 } },
               }}
             >
-              <span className="inline-block rounded-full border border-white/10 bg-black/50 px-4 py-2 text-sm text-zinc-200 backdrop-blur-sm transition hover:border-pink-500/40 hover:text-pink-100">
+              <span className="inline-block rounded-full border border-white/20 bg-white/[0.07] px-4 py-2 text-sm text-white shadow-sm shadow-black/10 backdrop-blur-lg transition hover:border-pink-400/45 hover:bg-white/[0.11] hover:text-pink-50">
                 {name}
               </span>
             </motion.li>

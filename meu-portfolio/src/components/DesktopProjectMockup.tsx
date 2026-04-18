@@ -38,17 +38,11 @@ export function DesktopProjectMockup({ imageSrc, alt, chromeLabel = 'projeto · 
   return (
     <div
       ref={wrapRef}
-      className="relative mx-auto w-full max-w-2xl pb-10 [perspective:1400px]"
+      className="relative mx-auto w-full max-w-2xl pb-4 [perspective:1400px]"
       onPointerMove={onMove}
       onPointerLeave={onLeave}
       onPointerCancel={onLeave}
     >
-      {!reducedMotion && (
-        <p className="pointer-events-none absolute -bottom-2 left-1/2 w-max -translate-x-1/2 font-mono text-[10px] text-zinc-500 sm:-bottom-1 sm:text-xs">
-          Passe o cursor para inclinar o desktop em 3D
-        </p>
-      )}
-
       <motion.div
         className="relative mx-auto w-full [transform-style:preserve-3d]"
         style={{ rotateX, rotateY }}
