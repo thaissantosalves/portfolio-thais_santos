@@ -31,15 +31,14 @@ const otherProjects: Project[] = [
 ];
 
 const container = {
-  hidden: { opacity: 0 },
+  hidden: {},
   show: {
-    opacity: 1,
     transition: { staggerChildren: 0.12 },
   },
 };
 
 const item = {
-  hidden: { opacity: 0, y: 22 },
+  hidden: { opacity: 1, y: 20 },
   show: {
     opacity: 1,
     y: 0,

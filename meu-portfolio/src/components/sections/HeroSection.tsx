@@ -82,9 +82,9 @@ export function HeroSection() {
 
         <motion.div
           className="relative hidden min-h-[280px] lg:block"
-          initial={{ opacity: 0, scale: 0.92 }}
+          initial={{ opacity: 1, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{ duration: 0.65, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
         >
           <div className="absolute inset-0 rounded-[2rem] border border-white/25 bg-gradient-to-br from-white/[0.12] to-white/[0.04] p-8 shadow-lg shadow-black/20 backdrop-blur-lg">
             <div className="flex h-full flex-col justify-between font-mono text-xs text-zinc-300">

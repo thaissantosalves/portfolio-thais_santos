@@ -44,7 +44,7 @@ export function TimeLine() {
             className={`relative flex flex-col gap-2 md:grid md:grid-cols-2 md:gap-8 ${
               index % 2 === 0 ? '' : 'md:text-right'
             }`}
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 1, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.45, delay: index * 0.08 }}

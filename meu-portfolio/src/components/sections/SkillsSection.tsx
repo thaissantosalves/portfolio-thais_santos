@@ -63,8 +63,13 @@ export function SkillsSection() {
             <motion.li
               key={name}
               variants={{
-                hidden: { opacity: 0, scale: 0.9 },
-                show: { opacity: 1, scale: 1, transition: { duration: 0.35 } },
+                hidden: { opacity: 1, scale: 0.94, y: 8 },
+                show: {
+                  opacity: 1,
+                  scale: 1,
+                  y: 0,
+                  transition: { duration: 0.38, ease: [0.22, 1, 0.36, 1] },
+                },
               }}
             >
               <span className="inline-block rounded-full border border-white/20 bg-white/[0.07] px-4 py-2 text-sm text-white shadow-sm shadow-black/10 backdrop-blur-lg transition hover:border-pink-400/45 hover:bg-white/[0.11] hover:text-pink-50">
